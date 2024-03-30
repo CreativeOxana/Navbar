@@ -1,21 +1,43 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-*, :after, :before { box-sizing: border-box; }
+*,
+:after,
+:before {
+	box-sizing: border-box;
+}
 
 body {
 	font-family: sans-serif;
 }
 
-
 .hlavicka {
 	background-color: #3498db;
 	color: white;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar {
+	padding: 0;
+	margin: 1px;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	padding: 10px 20px;
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 a {
-	display: block;
+	display: flex;
 	padding: 5px 15px;
 	color: white;
 	text-decoration: none;
+	align-items: center;
 }
 
 a:hover {
